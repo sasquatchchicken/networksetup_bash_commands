@@ -2,23 +2,17 @@
 
 ## Overview
 
-This repository provides a collection of networksetup commands to craft and scripts for crafting Tactics, Techniques, and Procedures (TTPs) and conducting threat simulations in various network environments. The networksetup commands are used to interact with network settings on macOS, offering a versatile toolset for network manipulation and testing.
+This repository provides a collection of networksetup commands to craft scripts for crafting Tactics, Techniques, and Procedures (TTPs) and conducting threat simulations in various network environments. The networksetup commands are used to interact with network settings on macOS, offering a versatile toolset for network manipulation and testing.
 
 ## Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Installation
-
-To use the scripts and commands in this repository, ensure you have the `networksetup` utility available on macOS. Clone the repository to your local machine to access the provided scripts.
 
 ```bash
 git clone https://github.com/sasquatchchicken/networksetup-ttps.git
 cd networksetup-ttps
+```bash
 
 ## Usage
 
