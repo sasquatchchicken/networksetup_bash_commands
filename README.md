@@ -9,10 +9,9 @@ This repository provides a collection of networksetup commands to craft scripts 
 - [Usage](#usage)
 - [Examples](#examples)
 
-```bash
 git clone https://github.com/sasquatchchicken/networksetup-ttps.git
 cd networksetup-ttps
-```bash
+
 
 ## Usage
 
@@ -32,7 +31,7 @@ For a threat actor, this command can be part of a technique to redirect or inter
 #Man-in-the-Middle (MitM) Attacks: By controlling the proxy server, the attacker can perform man-in-the-middle attacks, altering or injecting content into the communication between the target machine and the web servers.
 
 #Bypassing Content Filters: A proxy server can be used to bypass content filters or access restricted content by making requests on behalf of the target machine.
-
+```bash
 # Enable the proxy settings
 networksetup -setwebproxy "Wi-Fi" proxy.<server_address> <Server_Port>
 
