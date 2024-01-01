@@ -6,7 +6,7 @@
 # macOS environment
 # Administrative privileges on the target machine although have not needed to enter sudo during testing
 # Educational purposes only; unauthorized use is strictly prohibited
-# Examples
+# Examples  you will need to supply a proxy server address in <place mark fields>
 
 # 1. Traffic Interception
 # Set web proxy to redirect traffic
