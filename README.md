@@ -31,6 +31,8 @@ By controlling the proxy server, the attacker can perform man-in-the-middle atta
 
 ## Bypassing Content Filters: 
 A proxy server can be used to bypass content filters or access restricted content by making requests on behalf of the target machine.
+
+Replace <server_address> and <Server_Port> 
 ```bash
 # Enable the proxy settings
 networksetup -setwebproxy "Wi-Fi" proxy.<server_address> <Server_Port>
