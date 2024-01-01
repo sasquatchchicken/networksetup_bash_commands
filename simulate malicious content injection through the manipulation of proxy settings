@@ -10,7 +10,7 @@
 
 # 1. Traffic Interception
 # Set web proxy to redirect traffic
-networksetup -setwebproxy "Wi-Fi" proxy.redirect.com> 8080
+networksetup -setwebproxy "Wi-Fi" <proxy.redirect.com> 8080
 
 # Configure proxy bypass for internal domains
 networksetup -setproxybypassdomains "Wi-Fi" "*.internal.lan" "*.local"
