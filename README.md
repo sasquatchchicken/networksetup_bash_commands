@@ -39,5 +39,5 @@ networksetup -setproxybypassdomains "Wi-Fi" "*.internal.lan" "*.local"
 
 # Display the updated proxy settings
 networksetup -getwebproxy "Wi-Fi"
-etworksetup -getproxybypassdomains "Wi-Fi"
+networksetup -getproxybypassdomains "Wi-Fi"
 
