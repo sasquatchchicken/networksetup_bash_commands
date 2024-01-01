@@ -9,10 +9,6 @@ This repository provides a collection of networksetup commands to craft scripts 
 - [Usage](#usage)
 - [Examples](#examples)
 
-git clone https://github.com/sasquatchchicken/networksetup-ttps.git
-cd networksetup-ttps
-
-
 ## Usage
 
 - VLAN configuration
