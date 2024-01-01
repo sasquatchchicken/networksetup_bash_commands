@@ -15,6 +15,6 @@ REM remove all the saved wireless networks from the targeted machine
 STRING networksetup -removeallpreferredwirelessnetworks Wi-Fi
 ENTER
 DELAY 500
-REM set the target computer name before you wipe
+REM set the target computer name after you wipe
 STRING networksetup -setcomputername no_mames_wey
 ENTER
