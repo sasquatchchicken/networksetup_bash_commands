@@ -10,14 +10,11 @@ This repository provides a collection of networksetup commands to craft scripts 
 - Proxy settings adjustment
 ## Contents
 
-- [Usage](#usage)
-- [Examples](#examples)
+- [Traffic-Interception](#Traffic-Interceptione)
+- [MitM](#MitM)
+- [Bypassing-Content-Filters](#Bypassing-Content-Filters)
+- [Usage](#Usage)
 
-## Usage
-
-for educational purposes and cannot be used for law violation or personal gain. The author of this project is not responsible for any possible harm caused by the materials of this project.
-
-## Examples
 
 Craft a TTP for bypassing proxy settings:
 
@@ -43,4 +40,6 @@ networksetup -setproxybypassdomains "Wi-Fi" "*.internal.lan" "*.local"
 # Display the updated proxy settings
 networksetup -getwebproxy "Wi-Fi"
 networksetup -getproxybypassdomains "Wi-Fi"
-
+```
+## Usage
+ for educational purposes and cannot be used for law violation or personal gain. The author of this project is not responsible for any possible harm caused by the materials of this project.
