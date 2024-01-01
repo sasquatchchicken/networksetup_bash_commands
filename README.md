@@ -4,6 +4,10 @@
 
 This repository provides a collection of networksetup commands to craft scripts for crafting Tactics, Techniques, and Procedures (TTPs) and conducting threat simulations in various network environments. The networksetup commands are used to interact with network settings on macOS, offering a versatile toolset for network manipulation and testing.
 
+- VLAN configuration
+- Network service manipulation
+- Preferred wireless networks management
+- Proxy settings adjustment
 ## Contents
 
 - [Usage](#usage)
@@ -11,10 +15,7 @@ This repository provides a collection of networksetup commands to craft scripts 
 
 ## Usage
 
-- VLAN configuration
-- Network service manipulation
-- Preferred wireless networks management
-- Proxy settings adjustment
+for educational purposes and cannot be used for law violation or personal gain. The author of this project is not responsible for any possible harm caused by the materials of this project.
 
 ## Examples
 
