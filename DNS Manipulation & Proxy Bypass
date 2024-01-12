@@ -1,66 +1,66 @@
-DNS Manipulation & Proxy Bypass
-Overview
-Objective: Explore a scenario where an attacker combines DNS manipulation and proxy bypass techniques to perform man-in-the-middle attacks.
+#DNS Manipulation & Proxy Bypass
+#Overview
+#Objective: Explore a scenario where an attacker combines DNS manipulation and proxy bypass techniques to perform man-in-the-middle attacks.
 
-Table of Contents
-Introduction
-Scenario Overview
-DNS Spoofing
-Same IP for Proxy and Legitimate Server
-Proxy Bypass and Traffic Interception
-Man-in-the-Middle (MitM) Attack
-Example (Simplified)
-Conclusion
-Usage and Defense Strategies
+#Table of Contents
+#Introduction
+#Scenario Overview
+#DNS Spoofing
+#Same IP for Proxy and Legitimate Server
+#Proxy Bypass and Traffic Interception
+#Man-in-the-Middle (MitM) Attack
+#Example (Simplified)
+#Conclusion
+#Usage and Defense Strategies
 
-Introduction
-This Example **FOR EDUCATIONAL PURPOSES ONLY** delves into a practical scenario illustrating how an attacker, employing DNS spoofing and proxy bypass techniques, can compromise network security. The goal is to provide insights for educational purposes, emphasizing potential risks and defensive strategies.
+#Introduction
+#This Example **FOR EDUCATIONAL PURPOSES ONLY** delves into a practical scenario illustrating how an attacker, employing DNS spoofing and proxy bypass techniques, can compromise network security. The goal is to provide insights for educational purposes, emphasizing potential risks and defensive strategies.
 
-Scenario Overview
-In this scenario, the attacker combines DNS spoofing and proxy bypass to redirect traffic through a malicious web proxy. The attacker manipulates DNS responses to associate the target domain with their proxy's IP address, achieving seamless interception of user traffic.
+#Scenario Overview
+#In this scenario, the attacker combines DNS spoofing and proxy bypass to redirect traffic through a malicious web proxy. The attacker manipulates DNS responses to associate the target domain with their proxy's IP address, achieving seamless interception of user traffic.
 
-DNS Spoofing
-DNS spoofing is a fundamental aspect of this attack. The attacker leverages techniques such as DNS spoofing or cache poisoning to provide incorrect IP addresses during domain name resolution.
+#DNS Spoofing
+#DNS spoofing is a fundamental aspect of this attack. The attacker leverages techniques such as DNS spoofing or cache poisoning to provide incorrect IP addresses during domain name resolution.
 
-Same IP for Proxy and Legitimate Server
-The attacker configures DNS records to resolve the target domain to the IP address of their malicious proxy server. This setup involves giving the malicious proxy the same IP address as the legitimate server.
+#Same IP for Proxy and Legitimate Server
+#The attacker configures DNS records to resolve the target domain to the IP address of their malicious proxy server. This setup involves giving the malicious proxy the same IP address as the legitimate server.
 
-Proxy Bypass and Traffic Interception
-To intercept traffic without detection, the attacker adds the target domain to the proxy bypass list using the networksetup -setproxybypassdomains command. This ensures that traffic to the specified domain avoids the proxy.
+#Proxy Bypass and Traffic Interception
+#To intercept traffic without detection, the attacker adds the target domain to the proxy bypass list using the networksetup -setproxybypassdomains command. This ensures that traffic to the specified domain avoids the proxy.
 
-Man-in-the-Middle (MitM) Attack
-The web proxy, having the same IP address as the legitimate server, intercepts and potentially modifies the traffic between the user and the actual server, facilitating a man-in-the-middle attack.
+#Man-in-the-Middle (MitM) Attack
+#The web proxy, having the same IP address as the legitimate server, intercepts and potentially modifies the traffic between the user and the actual server, facilitating a man-in-the-middle attack.
 
-Example (Simplified)
-DNS Spoofing:
+#Example (Simplified)
+#DNS Spoofing:
 
-Attacker configures DNS records to resolve example.com to the IP address of the malicious proxy.
-Proxy Setup:   sudo nano /etc/hosts
-               <123.123.1.15 example.com> #replace this your malicious proxy
- Attacker sets up a web proxy with the same IP address. #set the ip for malicious proxy 
+#Attacker configures DNS records to resolve example.com to the IP address of the malicious proxy.
+#Proxy Setup:   sudo nano /etc/hosts
+#               <123.123.1.15 example.com> #replace this your malicious proxy
+# Attacker sets up a web proxy with the same IP address. #set the ip for malicious proxy 
   
-Bypass Configuration:
-Attacker uses networksetup -setproxybypassdomains to exclude example.com from proxying.
+#Bypass Configuration:
+#Attacker uses networksetup -setproxybypassdomains to exclude example.com from proxying.
 networksetup -setproxybypassdomains "Wi-Fi" "example.com"
 
-Traffic Interception:
-User accesses example.com, believing it's reaching the legitimate server.
-Traffic is redirected to the attacker's proxy due to DNS spoofing and bypass configuration.
-The attacker can intercept, log, or manipulate the traffic.
+#Traffic Interception:
+#User accesses example.com, believing it's reaching the legitimate server.
+#Traffic is redirected to the attacker's proxy due to DNS spoofing and bypass configuration.
+#The attacker can intercept, log, or manipulate the traffic.
 
-Conclusion
-This scenario underscores the importance of secure DNS practices, proper proxy configurations, and the need for additional security measures to detect and prevent such attacks. It serves as an educational resource to raise awareness of potential threats and defensive strategies.
+#Conclusion
+#This scenario underscores the importance of secure DNS practices, proper proxy configurations, and the need for additional security measures to detect and prevent such attacks. It serves as an educational resource to raise awareness of potential threats and defensive strategies.
 
-Usage and Defense Strategies
-To ensure network security:
+#Usage and Defense Strategies
+#To ensure network security:
 
-Implement DNS security measures.
-Regularly monitor and audit network configurations.
-Employ intrusion detection systems to detect anomalies.
-Educate users on recognizing potential threats.
-Regularly update and patch systems to mitigate vulnerabilities.
+#Implement DNS security measures.
+#Regularly monitor and audit network configurations.
+#Employ intrusion detection systems to detect anomalies.
+#Educate users on recognizing potential threats.
+#Regularly update and patch systems to mitigate vulnerabilities.
 
-**Disclaimer: This documentation is for educational purposes only. Do not attempt any malicious activities or violate ethical standards.
+#**Disclaimer: This documentation is for educational purposes only. Do not attempt any malicious activities or violate ethical standards.
 
 
 
